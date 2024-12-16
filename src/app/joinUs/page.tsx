@@ -14,7 +14,7 @@ export default function JoinUs() {
         <>
             <Header />
             <Header2 />
-            <div className="flex justify-center items-center h-screen mt-[8rem] px-4 md:px-0">
+            <div className="flex justify-center items-center h-screen mt-[8rem] px-4 md:px-0 mb-[12rem]">
                 <div className="bg-white p-8 rounded-lg w-full max-w-md">
                     <div className="flex justify-center mb-1">
                         <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">

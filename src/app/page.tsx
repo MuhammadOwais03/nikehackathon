@@ -59,7 +59,7 @@ export default function Home() {
 
       <section>
         <h1 className="text-2xl font-bold mb-4 ml-[8rem]">The Essentials</h1>
-        <div className="flex space-x-4 justify-center mt-10 flex-wrap">
+        <div className="flex space-x-4 space-y-4 justify-center mt-10 flex-wrap">
 
 
           <div className="relative w-[440px] h-[540px] bg-white overflow-hidden">
@@ -69,7 +69,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
 
-            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white  rounded-full text-black">
               Men's
             </button>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
 
-            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white  rounded-full text-black">
               Women's
             </button>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
 
-            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white  rounded-full text-black">
               Kid's
             </button>
           </div>
@@ -103,7 +103,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="main-links-div flex justify-center items-center mt-[8rem] mb-[8rem]">
+        <div className="main-links-div flex flex-wrap justify-center items-center mt-[8rem] mb-[8rem]">
           <div className="flex flex-col mr-[8rem]">
             <h1 className="mb-8 font-bold">Icons</h1>
             <a href="" className="text-gray-500 mb-2">Air Force 1</a>

@@ -62,7 +62,7 @@ const Footer = () => {
                 </div>
 
                 {/* Footer Bottom Section */}
-                <div className="text-center mt-4 pt-4 flex flex-row justify-between px-4">
+                <div className="text-center mt-4 pt-4 flex flex-wrap flex-row justify-between px-4">
                     <div className="flex flex-row gap-8">
                         <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_1_5658)">

@@ -4,7 +4,7 @@ import L5 from '../../../public/l5.png'
 export default function Checkout() {
     return (
         <>
-            <header className="p-4 flex justify-between items-center border-b">
+            <header className="p-4 flex flex-wrap justify-between items-center border-b">
                 <a href="/">
                     <svg width="79" height="79" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_1_32)">
@@ -61,11 +61,11 @@ export default function Checkout() {
 
                 </div>
             </header>
-            <div className="bg-white text-gray-800 font-sans pl-[10rem]">
+            <div className="bg-white text-gray-800 font-sans">
                 {/* Header */}
 
                 {/* Main Content */}
-                <main className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 mr-[14rem] ml-[14rem]">
+                <main className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 ">
                     {/* Left Section */}
                     <section className="md:col-span-2">
                         <h2 className="text-lg font-bold mb-4">How would you like to get your order?</h2>
