@@ -1,5 +1,3 @@
-
-
 #links {
     padding-left: 18rem;
 }
@@ -11,24 +9,27 @@
     font-weight: 600;
     transition: all 0.5s ease;
 }
+
 #links a:hover {
     scale: 1.04;
-    
+
 }
 
-.NewFeatured, .Men {
+.NewFeatured,
+.Men {
     border-bottom: 2px solid black;
 }
 
 
 
-#searchInput{
+#searchInput {
     padding-left: 1rem;
     outline: none;
     font-size: 12px;
 }
-#searchInput:focus{
-    
+
+#searchInput:focus {
+
     outline: none;
 }
 
@@ -36,15 +37,27 @@
     display: none;
 }
 
-#mainProductAll{
+#mainProductAll {
     align-items: center;
     justify-content: center;
 
 }
 
-#filter{
+#filter {
     flex-direction: column;
-   }
+}
+
+#productCard {
+    transition: all 0.5s ease-in-out;
+}
+
+#productCard:hover {
+    scale: 1.03;
+}
+
+#footer-2 {
+    justify-content: space-between;
+}
 
 
 @media (max-width:768px) {
@@ -52,28 +65,59 @@
         display: block;
     }
 
-    #big-links, #search, #big-icons {
+    #big-links,
+    #big-icons {
         display: none;
+    }
+}
+@media (max-width:658px) {
+    #footer-2 {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 
 @media (max-width:1000px) {
-    #productCard{
+    #productCard {
         width: 300px;
         height: 400px;
     }
+
+    #big-links,
+    #big-icons {
+        display: none;
+    }
+
+    #ham {
+        display: block;
+    }
+
+    #links {
+        padding-left: 0rem;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
 }
+
 @media (max-width:850px) {
-    #productCard{
+    #productCard {
         width: 250px;
         height: 300px;
     }
 }
+
 @media (max-width:540px) {
-    #productCard{
+    #productCard {
         width: 100%;
         height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #proDe {
+        align-self: self-start;
+        margin-left: 6rem;
     }
 
     #allProductMainDiv {
@@ -82,27 +126,37 @@
         margin: auto;
         /* padding-left: 2rem; */
     }
+
+    #filterOptions {
+        display: none;
+    }
 }
+
 @media (max-width:400px) {
-    #filterOptions{
-       display: none;
+    #filterOptions {
+        display: none;
+    }
+    #proDe {
+        align-self: self-start;
+        margin-left: 0rem;
     }
 
-   
+
 }
+
 @media (max-width:750px) {
-   #mainProductAll{
-     flex-direction: column;
-   }
+    #mainProductAll {
+        flex-direction: column;
+    }
 
-   #filter{
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    height: fit-content;
-   }
+    #filter {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+    }
 
-   #new-head{
-    display: none;
-   }
+    #new-head {
+        display: none;
+    }
 }

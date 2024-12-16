@@ -14,9 +14,9 @@ export default function Header() {
 
                 {/* Links Section */}
                 <nav className="flex space-x-4 text-sm text-gray-600">
-                    <a href="#" className="text-black hover:underline">Find a Store</a>
+                    <a href="/allProducts" className="text-black hover:underline">Find a Store</a>
                     <span>|</span>
-                    <a href="#" className="text-black hover:underline">Help</a>
+                    <a href="/contactUs" className="text-black hover:underline">Contact Us</a>
                     <span>|</span>
                     <a href="/joinUs" className="text-black hover:underline">Join Us</a>
                     <span>|</span>

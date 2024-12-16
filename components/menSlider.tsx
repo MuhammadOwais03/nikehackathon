@@ -60,8 +60,8 @@ export default function MenSlider() {
                             alt={item.name}
                             className="w-full h-[70%] object-cover rounded-md"
                         />
-                        <div id='description' className="text-center m-4 flex justify-between item-center" >
-                            <h1 id='name' className="text-gray-800 font-semibold">{item.name}</h1>
+                        <div id='description' className="text-center m-4 flex flex-wrap justify-between item-center" >
+                            <h1 id='name' className="text-gray-800 font-semibold sm:text-[12px]">{item.name}</h1>
                             <p id="price" className="text-gray-800 font-semibold mt-2">₹ {item.price}</p>
                         </div>
                         <p className="ex text-xs text-gray-500">{item.desc}</p>

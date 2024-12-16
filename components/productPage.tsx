@@ -19,7 +19,7 @@ import './st.css'
 export default function ProductPage() {
     return (
         <div className="flex justify-between" id='mainProductAll' >
-            <div className="flex w-[260px] h-[849px] px-4 overflow-y-auto self-start" id='filter'>
+            <div className="flex w-[260px] h-[849px] px-4 overflow-y-auto self-start fixed" id='filter'>
                 {/* Header */}
                 <div className="flex justify-between items-center mb-12">
                     <h3 className="text-2xl font-bold" id="new-head">New (500)</h3>
@@ -124,7 +124,7 @@ export default function ProductPage() {
 
 
 
-            <div id="allProductMainDiv" className="flex flex-wrap gap-6 justify-center w-full">
+            <div id="allProductMainDiv" className="flex flex-wrap gap-6 justify-center items-center w-full">
                 
 
                 {/* Products Section */}
@@ -245,7 +245,7 @@ export default function ProductPage() {
                 ].map((item, index) => (
                     <a
                         key={index}
-                        className="flex flex-col bg-white  p-4 w-[348px] h-[533px] hover:shadow-xl cursor-pointer"
+                        className="flex flex-col bg-white  p-4 w-[348px] h-[533px] hover:shadow-xl cursor-pointer sm:justify-center sm:items-center"
                         id="productCard"
                         href='/description'
 
@@ -260,7 +260,7 @@ export default function ProductPage() {
                             
                         />
                         {/* Product Details */}
-                        <div className="flex flex-col mt-4 space-y-2">
+                        <div className="flex flex-col mt-4 space-y-2" id="proDe">
                             <p className="text-orange-500 text-sm font-bold">{item.tag}</p>
                             <h3 className="text-lg font-semibold">{item.name}</h3>
                             <p className="text-gray-600">{item.category}</p>

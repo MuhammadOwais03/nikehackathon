@@ -22,8 +22,8 @@ export default function Home() {
       <Feature />
 
       {/* Gear Up Section */}
-      <section className="px-8">
-        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">Gear Up</h1>
+      <section className="px-8 flex flex-col flex-wrap justify-center items-center">
+      <h1 className="text-2xl font-bold ">Gear Up</h1>
         <div className="w-full flex justify-evenly items-center flex-wrap gap-6">
           <div className="w-full md:w-[45%]">
             <MenSlider />
@@ -35,9 +35,9 @@ export default function Home() {
       </section>
 
       {/* Don't Miss Section */}
-      <section className="px-8 mt-8">
-        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">Don't Miss</h1>
-        <div className="px-4 flex justify-center item-center flex-col">
+      <section className="px-8 mt-8 px-8 flex flex-col flex-wrap justify-center items-center">
+        <h1 className="text-2xl font-bold">Don't Miss</h1>
+        <div className=" flex justify-center item-center flex-col">
           <img
             src={DontMiss.src}
             alt="Don't Miss Banner"
@@ -57,9 +57,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
-        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">The Essentials</h1>
-        <div className="flex space-x-4 space-y-4 justify-center mt-10 flex-wrap">
+      <section className="mt-8 flex flex-col flex-wrap justify-center items-center">
+        <h1 className="text-2xl font-bold">The Essentials</h1>
+        <div className="flex gap-8 justify-center mt-10 flex-wrap">
 
 
           <div className="relative w-[440px] h-[540px] bg-white overflow-hidden">
@@ -103,39 +103,47 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="main-links-div flex flex-wrap justify-center items-center mt-[8rem] mb-[8rem]">
-          <div className="flex flex-col mr-[8rem]">
-            <h1 className="mb-8 font-bold">Icons</h1>
-            <a href="" className="text-gray-500 mb-2">Air Force 1</a>
-            <a href="" className="text-gray-500 mb-2">Huarache</a>
-            <a href="" className="text-gray-500 mb-2">Air Max 90</a>
-            <a href="" className="text-gray-500 mb-2">Air Max 95</a>
+        <div className="main-links-div flex flex-wrap justify-center items-center mt-[8rem] mb-[8rem] px-[4rem]">
+          
+          <div className="flex flex-col mb-8 sm:mb-0 sm:mr-[4rem] lg:mr-[8rem] w-full sm:w-auto">
+            <h1 className="mb-4 sm:mb-8 font-bold text-center sm:text-left">Icons</h1>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Air Force 1</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Huarache</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Air Max 90</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Air Max 95</a>
           </div>
-          <div className="flex flex-col mr-[8rem]">
-            <h1 className="mb-8 font-bold">Shoes</h1>
-            <a href="" className="text-gray-500 mb-2">All Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Custom Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Jordan Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Running Shoes</a>
+
+          
+          <div className="flex flex-col mb-8 sm:mb-0 sm:mr-[4rem] lg:mr-[8rem] w-full sm:w-auto">
+            <h1 className="mb-4 sm:mb-8 font-bold text-center sm:text-left">Shoes</h1>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">All Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Custom Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Jordan Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Running Shoes</a>
           </div>
-          <div className="flex flex-col mr-[8rem]">
-            <h1 className="mb-8 font-bold">Clothing</h1>
-            <a href="" className="text-gray-500 mb-2">All Clothing</a>
-            <a href="" className="text-gray-500 mb-2">Modest Wear</a>
-            <a href="" className="text-gray-500 mb-2">Hoodies & Pullovers</a>
-            <a href="" className="text-gray-500 mb-2">Shirts & Tops</a>
+
+          
+          <div className="flex flex-col mb-8 sm:mb-0 sm:mr-[4rem] lg:mr-[8rem] w-full sm:w-auto">
+            <h1 className="mb-4 sm:mb-8 font-bold text-center sm:text-left">Clothing</h1>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">All Clothing</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Modest Wear</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Hoodies & Pullovers</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Shirts & Tops</a>
           </div>
-          <div className="flex flex-col">
-            <h1 className="mb-8 font-bold">Kid's</h1>
-            <a href="" className="text-gray-500 mb-2">Infant & Toddler Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Kids' Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Kids' Jordan Shoes</a>
-            <a href="" className="text-gray-500 mb-2">Kids' Basketball Shoes</a>
+
+          
+          <div className="flex flex-col w-full sm:w-auto">
+            <h1 className="mb-4 sm:mb-8 font-bold text-center sm:text-left">Kid's</h1>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Infant & Toddler Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Kids' Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Kids' Jordan Shoes</a>
+            <a href="" className="text-gray-500 mb-2 text-center sm:text-left">Kids' Basketball Shoes</a>
           </div>
         </div>
       </section>
 
-            <Footer/>
+
+      <Footer />
     </>
   );
 }

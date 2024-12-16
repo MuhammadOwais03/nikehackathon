@@ -19,4 +19,5 @@ body {
   background: var(--background);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  /* line-height: 24px; */
 }

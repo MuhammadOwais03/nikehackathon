@@ -65,15 +65,17 @@
     background: #f4f4f4;
     color: black;
     border: none;
-    padding: 10px;
+    padding: 5px;
     border-radius: 50%;
+    padding-left: 7px;
+    padding-right: 7px;
     cursor: pointer;
     transition: background 0.3s;
   }
   
   /* Slider Navigation Button Styles */
   .sliderNav:first-of-type {
-    right: 260px;
+    right: 340px;
     top: 0;
     transform: translateY(-50%);
 }

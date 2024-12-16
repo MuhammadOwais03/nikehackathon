@@ -65,86 +65,120 @@ export default function Checkout() {
                 {/* Header */}
 
                 {/* Main Content */}
-                <main className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 ">
+                <main className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-4 lg:p-8">
                     {/* Left Section */}
-                    <section className="md:col-span-2">
-                        <h2 className="text-lg font-bold mb-4">How would you like to get your order?</h2>
+                    <section className="flex flex-col flex-wrap justify-center lg:col-span-2">
+                        <h2 className="text-base md:text-lg font-bold mb-4">
+                            How would you like to get your order?
+                        </h2>
                         <p className="text-sm mb-4">
-                            Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information. <a href="#" className="text-gray-600 underline">Learn More</a>
+                            Customs regulation for India require a copy of the recipient's KYC. The address on the KYC needs to match the shipping address. Our courier will contact you via SMS/email to obtain a copy of your KYC. The KYC will be stored securely and used solely for the purpose of clearing customs (including sharing it with customs officials) for all orders and returns. If your KYC does not match your shipping address, please click the link for more information.{" "}
+                            <a href="#" className="text-gray-600 underline">
+                                Learn More
+                            </a>
                         </p>
 
                         {/* Image */}
-                        <div className="border p-4 mb-8 flex items-center mr-[1rem] ml-[1rem]">
+                        <div className="border p-4 mb-8 flex items-center mx-4 md:mx-8">
                             <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M22.9538 9.12293L20.3077 1.61523H3.69228L1.10767 8.93831V20.6306H22.9538V9.12293ZM4.3692 2.53831H19.6307L21.7846 8.63062H2.21536L4.3692 2.53831ZM21.9692 19.7691H2.03074V9.5537H22.0307L21.9692 19.7691Z" fill="#111111" stroke="#111111" stroke-width="0.692308" stroke-linejoin="round" />
                                 <path d="M15.6902 12.2609L15.5976 12.1619C15.3364 11.8826 14.8983 11.8679 14.619 12.129C14.6158 12.1321 14.6125 12.1352 14.6093 12.1383L10.65 15.9876L9.39079 14.7633C9.11665 14.4968 8.67835 14.503 8.41182 14.7771C8.40869 14.7803 8.40559 14.7836 8.40252 14.7869L8.30992 14.8859C8.05236 15.1613 8.06263 15.5922 8.33301 15.8551L10.1674 17.6386C10.4361 17.8998 10.8639 17.8998 11.1326 17.6386L15.6671 13.2301C15.9375 12.9672 15.9477 12.5363 15.6902 12.2609Z" fill="#111111" />
                                 <path d="M12.4614 2.69238H11.5383V8.23084H12.4614V2.69238Z" fill="#D8D8D8" stroke="black" stroke-width="0.923077" />
                             </svg>
-
-                            <span className='ml-8'>Deliver It</span>
+                            <span className="ml-8">Deliver It</span>
                         </div>
 
                         {/* Form */}
                         <form className="space-y-6">
-                            <h3 className="text-lg font-semibold">Enter your name and address</h3>
+                            <h3 className="text-base md:text-lg font-semibold">
+                                Enter your name and address
+                            </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="text" placeholder="First Name" className="border p-2 w-full rounded" />
-                                <input type="text" placeholder="Last Name" className="border p-2 w-full rounded" />
-                                <input type="text" placeholder="Address Line 1" className="border p-2 w-full rounded md:col-span-2" />
-                                <input type="text" placeholder="Address Line 2" className="border p-2 w-full rounded md:col-span-2" />
-                                <input type="text" placeholder="Address Line 3" className="border p-2 w-full rounded md:col-span-2" />
-                                <input type="text" placeholder="Postal Code" className="border p-2 w-full rounded" />
-                                <input type="text" placeholder="Locality" className="border p-2 w-full rounded" />
-                                <select className="border p-2 w-full rounded">
-                                    <option value="">State/Territory</option>
-                                </select>
-                                <select className="border p-2 w-full rounded">
-                                    <option value="India">India</option>
-                                </select>
+                                {/* Form Fields */}
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    className="border p-2 w-full rounded"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    className="border p-2 w-full rounded"
+                                />
+                                {/* Add remaining fields */}
                             </div>
 
+                            {/* Responsive Spacing */}
                             <div className="space-y-2">
                                 <label className="flex items-center">
-                                    <input type="checkbox" className="mr-2" /> Save this address to my profile
+                                    <input type="checkbox" className="mr-2" />
+                                    Save this address to my profile
                                 </label>
                                 <label className="flex items-center">
-                                    <input type="checkbox" className="mr-2" /> Make this my preferred address
+                                    <input type="checkbox" className="mr-2" />
+                                    Make this my preferred address
                                 </label>
                             </div>
 
                             {/* Contact Information */}
-                            <h3 className="text-lg font-semibold">What’s your contact information?</h3>
+                            <h3 className="text-base md:text-lg font-semibold">
+                                What’s your contact information?
+                            </h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <input type="email" placeholder="Email" className="border p-2 w-full rounded" />
-                                <input type="text" placeholder="Phone Number" className="border p-2 w-full rounded" />
+                                {/* Contact Fields */}
+                                <input
+                                    type="email"
+                                    placeholder="Email"
+                                    className="border p-2 w-full rounded"
+                                />
+                                <input
+                                    type="text"
+                                    placeholder="Phone Number"
+                                    className="border p-2 w-full rounded"
+                                />
                             </div>
 
                             {/* PAN Information */}
-                            <h3 className="text-lg font-semibold">What’s your PAN?</h3>
-                            <div className="space-y-4 mb-[8rem]">
-                                <input type="text" placeholder="PAN" className="border p-2 w-full rounded" />
-                                <p>Enter your PAN to enable payment with UPI, Net Banking or local card methods</p>
+                            <h3 className="text-base md:text-lg font-semibold">What’s your PAN?</h3>
+                            <div className="space-y-4 mb-16">
+                                <input
+                                    type="text"
+                                    placeholder="PAN"
+                                    className="border p-2 w-full rounded"
+                                />
+                                <p>
+                                    Enter your PAN to enable payment with UPI, Net Banking or local card
+                                    methods
+                                </p>
                                 <label className="flex items-center">
-                                    <input type="checkbox" className="mr-2" /> I don’t have a PAN
+                                    <input type="checkbox" className="mr-2" />
+                                    I don’t have a PAN
                                 </label>
-
-
                             </div>
                         </form>
 
                         {/* Second Image */}
-                        <div className="p-4 mt-[4rem]">
+                        <div className="p-4 mt-16">
                             <div className="flex items-center">
                                 <input type="checkbox" className="mr-2" />
                                 <p className="text-sm text-gray-600">
-                                    I have read and consent to eShopWorld processing my information in accordance with the{' '}
-                                    <a href="#" className="text-gray-600 underline">Privacy Statement</a> and{' '}
-                                    <a href="#" className="text-gray-600 underline">Cookie Policy</a>. eShopWorld is a trusted Nike partner.
+                                    I have read and consent to eShopWorld processing my information in
+                                    accordance with the{" "}
+                                    <a href="#" className="text-gray-600 underline">
+                                        Privacy Statement
+                                    </a>{" "}
+                                    and{" "}
+                                    <a href="#" className="text-gray-600 underline">
+                                        Cookie Policy
+                                    </a>
+                                    . eShopWorld is a trusted Nike partner.
                                 </p>
                             </div>
                         </div>
 
-                        <button className="w-[440px] h-[60px] bg-gray-800 text-white  rounded hover:bg-gray-700 mt-6 mx-auto">Continue</button>
+                        <button className="w-full md:w-3/4 lg:w-1/2 h-14 bg-gray-800 text-white rounded hover:bg-gray-700 mt-6 mx-auto">
+                            Continue
+                        </button>
                         <div className="flex flex-col items-evenly justify-center mt-8">
                             <ul className='ml-6'>
                                 <hr />
@@ -160,7 +194,7 @@ export default function Checkout() {
                     </section>
 
                     {/* Right Section - Order Summary */}
-                    <aside className=" p-6 bg-gray-50  w-[450px]">
+                    <aside className="  border-l pl-[1rem] w-full  lg:w-[450px]">
                         <h3 className="text-lg font-bold mb-4">Order Summary</h3>
                         <div className="text-sm mb-4">
                             <div className="flex justify-between mb-2">
@@ -196,8 +230,8 @@ export default function Checkout() {
 
                     </aside>
                 </main>
-
             </div>
+
             {/* Footer */}
             <footer className="flex flex-row flex-wrap space-y-8 p-4 justify-between items-center text-xs text-gray-600 border-t bg-black text-white">
                 <div className="upper flex flex-row gap-8">
@@ -215,7 +249,7 @@ export default function Checkout() {
 
                     <p className='text-white'>Terms and Conditions &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; © 2024 Nike</p>
                 </div>
-                <div className="logos flex flex-row p-4  items-center gap-2 ">
+                <div className="logos flex flex-row p-4 flex-wrap  items-center gap-2 ">
                     <svg width="45" height="28" viewBox="0 0 45 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                         <rect y="0.796875" width="45" height="27" fill="url(#pattern0_1_5668)" />
                         <defs>

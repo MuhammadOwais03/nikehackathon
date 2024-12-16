@@ -25,8 +25,8 @@ export default function Slider() {
 
   return (
     <>
-      <h1 className="ML">Best of Air Max</h1>
-      <div id="mainSliderContainer">
+      <h1 className="ML font-semibold text-[24px] ">Best of Air Max</h1>
+      <div id="mainSliderContainer" className="mb-[8rem]">
         <div className="sliderNav">
           <button onClick={slideLeft} className="sliderButton">
             <FontAwesomeIcon icon={faChevronLeft} />
