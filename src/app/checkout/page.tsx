@@ -199,7 +199,7 @@ export default function Checkout() {
 
             </div>
             {/* Footer */}
-            <footer className="flex flex-row p-4 justify-between items-center text-xs text-gray-600 border-t bg-black text-white">
+            <footer className="flex flex-row flex-wrap space-y-8 p-4 justify-between items-center text-xs text-gray-600 border-t bg-black text-white">
                 <div className="upper flex flex-row gap-8">
                     <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clipPath="url(#clip0_1_5658)">
