@@ -1,0 +1,46 @@
+/* Default Flex layout (for larger screens) */
+.descCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    gap: 3rem;
+}
+
+/* Content box size */
+.descContent {
+    width: 360px;
+}
+
+/* Image size */
+.descCont img {
+    width: 653px;
+    height: 653px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .descCont {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+
+    .descContent {
+        width: 100%;
+    }
+
+    .descCont img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#cartBtn {
+    padding: 1rem;
+}

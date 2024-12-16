@@ -1,101 +1,141 @@
-import Image from "next/image";
+import Header from "../../components/header";
+import Header2 from "../../components/header2";
+import Hero from "../../components/hero";
+import Slider from "../../components/slider";
+import Feature from "../../components/features";
+import MenSlider from "../../components/menSlider";
+import WomenSlider from "../../components/womenSlider";
+import Footer from "../../components/footer";
+import shoe1 from "../../public/shoe1.png"; // Replace with your images
+import esen1 from "../../public/esen1.png"
+import esen2 from "../../public/esen2.png"
+import esen3 from "../../public/esen3.png"
+import DontMiss from "../../public/dontMiss.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Header />
+      <Header2 />
+      <Hero />
+      <Slider />
+      <Feature />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Gear Up Section */}
+      <section className="px-8">
+        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">Gear Up</h1>
+        <div className="w-full flex justify-evenly items-center flex-wrap gap-6">
+          <div className="w-full md:w-[45%]">
+            <MenSlider />
+          </div>
+          <div className="w-full md:w-[45%]">
+            <WomenSlider />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      </section>
+
+      {/* Don't Miss Section */}
+      <section className="px-8 mt-8">
+        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">Don't Miss</h1>
+        <div className="px-4 flex justify-center item-center flex-col">
+          <img
+            src={DontMiss.src}
+            alt="Don't Miss Banner"
+            className="mx-auto"
+            style={{
+              maxWidth: "1344px",
+              maxHeight: "700px",
+              width: "100%",
+              height: "auto",
+            }}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+          <h1 className="text-center text-6xl font-bold mt-[7rem]">FLIGHT ESSENTIALS</h1>
+
+          <p className="text-center mt-10">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
+          <button className="p-4 bg-black rounded-full text-white w-[70px] h-[40px] mx-auto text-center mt-10">Shop</button>
+        </div>
+      </section>
+
+      <section>
+        <h1 className="text-2xl font-bold mb-4 ml-[8rem]">The Essentials</h1>
+        <div className="flex space-x-4 justify-center mt-10 flex-wrap">
+
+
+          <div className="relative w-[440px] h-[540px] bg-white overflow-hidden">
+            <img
+              src={esen1.src}
+              alt="Card 1"
+              className="w-full h-full object-cover"
+            />
+
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+              Men's
+            </button>
+          </div>
+
+
+          <div className="relative w-[440px] h-[540px] bg-white overflow-hidden">
+            <img
+              src={esen2.src}
+              alt="Card 2"
+              className="w-full h-full object-cover"
+            />
+
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+              Women's
+            </button>
+          </div>
+
+
+          <div className="relative w-[440px] h-[540px] bg-white overflow-hidden">
+            <img
+              src={esen3.src}
+              alt="Card 3"
+              className="w-full h-full object-cover"
+            />
+
+            <button className="absolute bottom-16 left-16 px-4 py-2 bg-white text-white rounded-full text-black">
+              Kid's
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="main-links-div flex justify-center items-center mt-[8rem] mb-[8rem]">
+          <div className="flex flex-col mr-[8rem]">
+            <h1 className="mb-8 font-bold">Icons</h1>
+            <a href="" className="text-gray-500 mb-2">Air Force 1</a>
+            <a href="" className="text-gray-500 mb-2">Huarache</a>
+            <a href="" className="text-gray-500 mb-2">Air Max 90</a>
+            <a href="" className="text-gray-500 mb-2">Air Max 95</a>
+          </div>
+          <div className="flex flex-col mr-[8rem]">
+            <h1 className="mb-8 font-bold">Shoes</h1>
+            <a href="" className="text-gray-500 mb-2">All Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Custom Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Jordan Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Running Shoes</a>
+          </div>
+          <div className="flex flex-col mr-[8rem]">
+            <h1 className="mb-8 font-bold">Clothing</h1>
+            <a href="" className="text-gray-500 mb-2">All Clothing</a>
+            <a href="" className="text-gray-500 mb-2">Modest Wear</a>
+            <a href="" className="text-gray-500 mb-2">Hoodies & Pullovers</a>
+            <a href="" className="text-gray-500 mb-2">Shirts & Tops</a>
+          </div>
+          <div className="flex flex-col">
+            <h1 className="mb-8 font-bold">Kid's</h1>
+            <a href="" className="text-gray-500 mb-2">Infant & Toddler Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Kids' Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Kids' Jordan Shoes</a>
+            <a href="" className="text-gray-500 mb-2">Kids' Basketball Shoes</a>
+          </div>
+        </div>
+      </section>
+
+            <Footer/>
+    </>
   );
 }

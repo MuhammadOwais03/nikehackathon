@@ -1,0 +1,45 @@
+
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.feature img {
+    margin: 0rem 3rem 1rem;
+}
+
+.feature h5 {
+    text-align: left;  /* Align the h5 to the left */
+    margin: 0; /* Optional: To remove any default margin */
+    align-self: flex-start;
+    margin-left: 5.5rem;
+    
+}
+
+.feature h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.feature p {
+    font-size: 12px;
+}
+
+/* Button styles */
+.feature button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+.feature button:hover {
+    background-color: #333;
+}

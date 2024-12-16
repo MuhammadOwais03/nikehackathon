@@ -1,0 +1,108 @@
+
+
+#links {
+    padding-left: 18rem;
+}
+
+#links a {
+    display: inline-block;
+    font-size: 15px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+#links a:hover {
+    scale: 1.04;
+    
+}
+
+.NewFeatured, .Men {
+    border-bottom: 2px solid black;
+}
+
+
+
+#searchInput{
+    padding-left: 1rem;
+    outline: none;
+    font-size: 12px;
+}
+#searchInput:focus{
+    
+    outline: none;
+}
+
+#ham {
+    display: none;
+}
+
+#mainProductAll{
+    align-items: center;
+    justify-content: center;
+
+}
+
+#filter{
+    flex-direction: column;
+   }
+
+
+@media (max-width:768px) {
+    #ham {
+        display: block;
+    }
+
+    #big-links, #search, #big-icons {
+        display: none;
+    }
+}
+
+
+@media (max-width:1000px) {
+    #productCard{
+        width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width:850px) {
+    #productCard{
+        width: 250px;
+        height: 300px;
+    }
+}
+@media (max-width:540px) {
+    #productCard{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #allProductMainDiv {
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /* padding-left: 2rem; */
+    }
+}
+@media (max-width:400px) {
+    #filterOptions{
+       display: none;
+    }
+
+   
+}
+@media (max-width:750px) {
+   #mainProductAll{
+     flex-direction: column;
+   }
+
+   #filter{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+   }
+
+   #new-head{
+    display: none;
+   }
+}

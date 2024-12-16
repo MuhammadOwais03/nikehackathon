@@ -1,0 +1,50 @@
+#womenSlider {
+    position: relative;
+    margin: 2rem auto;
+    width: 90%;
+}
+
+#womenSliderContent {
+    display: flex;
+    gap: 1rem;
+}
+
+#womenSliderContent .slide-card .text-center {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 10px;
+}
+#womenSliderContent .slide-card #name {
+  font-weight: bold;
+}
+#womenSliderContent .slide-card #price {
+  font-weight: bold;
+}
+
+#womenSliderContent .slide-card .ex {
+    width: 60%;
+}
+#btn-navigation {
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+#btn-navigation .text-xl {
+    padding: 0.6rem;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;    /* Firefox */
+}
