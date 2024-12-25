@@ -60,6 +60,12 @@
 }
 
 
+.absolute {
+    position: absolute;
+    right: 10px;
+}
+
+
 @media (max-width:768px) {
     #ham {
         display: block;

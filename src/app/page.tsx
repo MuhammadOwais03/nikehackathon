@@ -53,7 +53,7 @@ export default function Home() {
           <h1 className="text-center text-6xl font-bold mt-[7rem]">FLIGHT ESSENTIALS</h1>
 
           <p className="text-center mt-10">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</p>
-          <button className="p-4 bg-black rounded-full text-white w-[70px] h-[40px] mx-auto text-center mt-10">Shop</button>
+          <button className=" bg-black rounded-full text-white w-[70px] h-[40px] mx-auto text-center mt-10">Shop</button>
         </div>
       </section>
 
